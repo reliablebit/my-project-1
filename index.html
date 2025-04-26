@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="burgercraft.css">
+  <title>Burger Builder</title>
+
+</head>
+<body>
+
+  
+  <header>
+    <div class="logo">
+      <img src="./images/burger-removebg-preview.png" alt="burger logo">
+      <span>BurgerCraft</span>
+    </div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Snacks</li>
+        <li>Drinks</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="controls-panel">
+      <h1>🍔 Build Your Burger</h1>
+      <div class="controls">
+        <div class="ingredient-controls">
+          <span>Meat</span>
+          <button onclick="addIngredient('meat')">+</button>
+          <button onclick="removeIngredient('meat')">−</button>
+        </div>
+        <div class="ingredient-controls">
+          <span>Lettuce</span>
+          <button onclick="addIngredient('lettuce')">+</button>
+          <button onclick="removeIngredient('lettuce')">−</button>
+        </div>
+        <div class="ingredient-controls">
+          <span>Cheese</span>
+          <button onclick="addIngredient('cheese')">+</button>
+          <button onclick="removeIngredient('cheese')">−</button>
+        </div>
+
+          <button class="order-btn">Order Now</button>
+          <button class="cart-btn">Add to Cart</button>
+
+      </div>
+      <div class="price">Total Price: $<span id="total">0.00</span></div>
+    </div>
+
+    <div class="burger-container" id="burger">
+      <div class="bun-top ingredient"></div>
+      
+      <div class="bun-bottom ingredient"></div>
+    </div>
+
+
+
+  </main>
+
+  
+  <footer>
+    🍔 BurgerCraft © 2025 | Built with love & style.
+  </footer>
+
+
+<script src="burgercraft.js">
+
+</script>
+
+</body>
+</html>
+
