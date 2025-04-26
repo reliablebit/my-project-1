@@ -1,0 +1,218 @@
+:root {
+    --bg: #000;
+    --text: #fff;
+    --accent: #ffcc00;
+    --secondary: #1a1a1a;
+    --hover: #333;
+    --border: #444;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header, footer {
+    background-color:rgba(128, 128, 128, 0.349);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* position: absolute; */
+    /* border: 2px solid rgba(212, 212, 212, 0.61); */
+
+    /* border: 2px solid rgba(0, 0, 0, 0); */
+    /* border-radius: 400px solid; */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  nav li:hover {
+    color: var(--accent);
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .controls-panel {
+    max-width: 320px;
+    background-color: var(--secondary);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+  }
+
+  .controls-panel h1 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .ingredient-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ingredient-controls span {
+    flex: 1;
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--hover);
+    color: var(--text);
+    cursor: pointer;
+    /* transition: background 0.3s ease; */
+    font-weight: bold;
+    margin: 3px;
+  }
+
+  button:hover {
+    background-color: var(--accent);
+    color: #000;
+  }
+
+  .price {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .burger-container {
+    width: 250px;
+    /* background-color: var(--secondary); */
+    background-color: #ffcc0063;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid #ffcc00;
+  }
+
+  .ingredient {
+    width: 180px;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  .bun-top,
+  .bun-bottom {
+    background-color: #DEB887;
+    height: 30px;
+    border-radius: 50% / 20%;
+  }
+
+  .ismeat {
+    background: #c57033;
+  }
+
+  .islettuce {
+    background: #2e7d32;
+  }
+
+  .ischeese {
+    background: #f4e04d;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: #bbb;
+  }
+  .order-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  .order-btn:hover {
+    background-color: #218838;
+  }
+  
+  .cart-btn {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  .cart-btn:hover {
+    background-color: #e0a800;
+  }
+  
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
